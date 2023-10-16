@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+@if (@ViewBag.Email == null)
+{
+    <h1>User Not Authorised</h1>
+
+}
+else {
+<h2>Welcome @ViewBag.Email</h2>
+
+}
+
+
+

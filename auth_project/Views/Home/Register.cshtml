@@ -1,0 +1,38 @@
+﻿@model auth_project.Models.Userdata
+@{
+    ViewData["Title"] = "Register";
+}
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["Message"]
+    </div>
+}
+
+<style>
+    #login_form {
+        font-size: 22px;
+        border: 5px solid black;
+        width: 60%;
+        padding: 5%;
+        margin: auto;
+    }
+</style>
+<center><h1>Register</h1></center>
+<div id="login_form">
+    <form asp-action="Register" method="post">
+        <div class="mb-3" style="margin-bottom:2%">
+            <label for="exampleInputEmail1" class="form-label" asp-for="Email">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" asp-for="Email">
+        </div>
+        <div class="mb-3" style="margin-bottom:2%">
+            <label for="exampleInputPassword1" class="form-label" asp-for="Password">Password</label>
+            <input type="password" class="form-control" asp-for="Password" id="exampleInputPassword1" placeholder="enter your password">
+        </div>
+        <div class="mb-3 form-check" style="margin-bottom:2%">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" value="true" asp-for="Isadmin">
+            <label class="form-check-label" for="exampleCheck1">Admin</label>
+        </div>
+        <button type="submit" class="btn btn-primary center-block" style="font-size:large">Submit</button>
+    </form>
+</div>
