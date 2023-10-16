@@ -27,5 +27,8 @@ Welcome Page ( when no user have logged in)
 
 ![image](https://github.com/gargisawaria/AUTH/assets/96246464/7d93b029-68aa-4ccc-a91f-b73e6d5e24d9)
 
+## JWT Genterated Token
+
+![image](https://github.com/gargisawaria/AUTH/assets/96246464/dbf8f62e-3805-4b05-a0e1-1da03f096142)
 
 
